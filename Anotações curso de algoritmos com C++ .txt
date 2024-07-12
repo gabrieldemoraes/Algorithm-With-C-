@@ -1,0 +1,151 @@
+Curso de algoritmos com C++
+
+E abaixo o ID e senha da sala virtual que vocês devem logar no dia da aula pelo ZOOM.
+
+Troca de arquivos (Apostilas, exemplos, etc):
+https://www.dropbox.com/login
+login:  curso_algoritmos_agit@hotmail.com
+senha:  @lunoalgoritmos
+
+ID e senha ZOOM (sala virtual)
+ID: 894 3921 3759
+Senha: 202096	
+
+Aula 1 - 07/05 (sex) das 14:00 - 17:00 - https://youtu.be/SdLRhatBKXE
+Aula 2 - 14/05 (sab) das 14:00 - 17:00 - https://youtu.be/IroryeMZUAg
+Aula 3 - 21/05 (sab) das 14:00 - 17:00 - https://youtu.be/mwYZD6mu_dc
+Aula 4 - 28/05 (sab) das 14:00 - 18:00 - https://youtu.be/56gaH8n8Ytw
+Aula 5 - 04/06 (sab) das 14:00 - 18:00 - https://youtu.be/uYyX5OKowYo
+Aula 6 - 11/06 (sab) das 14:00 - 18:00 - https://youtu.be/j-cBILWotEE
+Aula 7 - 25/06 (sab) das 14:00 - 17:00 - https://youtu.be/7L4jMtgNH98
+
+Algoritmo: Especifição não ambígua para resolver uma classe de problemas (Wikipedia)
+
+Os códigos são acumulativos mas os papers variam. 
+
+Regra geral:
+- .hpp contem toda a implementação de dados (estrutura de dados) dos algoritmos.
+- .t.cpp é um test driver provavelmente de um ponto .hpp (utilizar .hpp deixa mais claro que é c++ e não c), o teste driver e um programa que vai testar o algoritmo ou a estrutura de dados. benchmarks e teste interativo.
+- .cpp significa que é o entry point. Ordena o test driver e faz o setup basico necessários. Nosso driver.
+- EOF = Ctrl+z em windows e ctrl+v em linux
+
+Introduction to algorithms -- Cormen
+
+Estrutura de dados
+Regular types: São tipos que a gente consegue colocar dentro de um container da STL.
+Containers: Estruturas de dados, listas por exemplo.
+Organização dentro de uma estrutura de dados é fundamental para fazer coisas diferenciadas. 
+Iterators são similares a ponteiros mas contém propriedades específicas importantes. 
+Características não funcionais --> ex: o programa deve processar a lista em 1 ms
+Quando vc especifica uma função você precisa indicar quais são as garantias, a forma que a função deve se comportar.
+Programas = algoritmos + estrutura de dados.
+
+Quais são as estratégicas de algoritmos que existem? - Essa é o que o curso irá responder
+
+A análise empírica permite que tenhamos dados para analizar a complexidade.
+
+Feature testing mostram quais são as funcionalidades que estão disponíveis pelo compilador.
+
+benchmark_linear_search.cpp --> cara da proxima aula
+Benchmark utilizado é header only, preciso apenas adicionar o include para utiliza-lo. PicoBench.hpp
+
+Tupla é uma alternativa para struct! -- adendo
+
+Busca Linear - Live Code:
+https://www.youtube.com/watch?v=Fr8hngsnj4s
+
+Aula 2:
+
+Criar uma função genérica para busca linear.
+Comparado por igual e seja acessado por índice.
+C++ templates.
+C++ 20 possui os concepts.
+Caso concreto --> template
+Estruturas de controle:
+- Sequência, 
+- Seleção(if)
+- Interação
+
+Programação genérica.
+Container == estrutura de dados
+
+Stable sort -- para uma segunda ordenação. Exemplo da lista de voos.
+
+Closure Property - Pointer Base
+- Hierarchical Data Structures
+
+Trie - data structure
+
+Gerenciamento de recursos em C++
+- RAII [Reource Acquisition in Initialization]; Gerenciar o recurso em um objeto
+- Encapsular recursos em C++ onde vc adquire recursos no construtor e devolve para o SO no destrutor.
+- Utilizar smart pointer pra utilizar o RAII.
+
+Rule of 5 C++
+
+input itertor tag
+
+Find substring
+- knut-morris-pratt
+- Máquina de estados
+- backtracking
+
+Algoritmo CPF - Wikipedia
+
+Matematica discreta e algebra linear
+
+SubstringSearcher e CPF
+
+inner product 
+x = d1 * d2
+
+Accumulate:
+Somatorio de um range
+
+TAG dispatching
+
+std::adjascent_find
+
+estrutura de dados deque, melhor pra inserir nas extremidades.
+vector é melhor para inserir no fim
+
+Programação estruturada
+
+Complementando o tópico, vale resaltar que para criação de std::unique_ptr e std::shared_ptr existem as funções std::make_unique e std::make_shared
+
+Local buffer optimization
+
+union
+
+Tail recursion
+
+Compiler explorer
+
+Memorization
+
+rotate
+
+mergesort é estável --> segunda ordenação mantém a primeira ordenada
+
+#include <iterator> --> std::distance
+
+deque não tem limitsssss
+partial.sort
+
+Algoritmos de estruturas de dados.
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
+Toda função recursiva é bom ter a profundidade de chamadas da sua função.
+
+Hashtables:
+https://youtu.be/mcKagm6QwY8
+
+modelo monte carlo
+
+FowardList == lista simples ligada
+
+função sobrejetora
+
+https://www.youtube.com/watch?v=mcKagm6QwY8
+
+https://www.youtube.com/watch?v=1mgfltsNozY
